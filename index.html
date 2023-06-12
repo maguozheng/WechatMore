@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>【正版多开】IOS微信多开-无需越狱，0掉线，0封号，0异常。</title>
+    <meta name="keywords" content="微信多开,苹果微信多开,安卓多开,安卓微信多开,苹果双开微信,苹果装2个微信,苹果怎么装2个微信">
+    <meta name="description" content="【微信多开】满足你不越狱装2个微信的梦，5年品质：0掉线，0封号，0异常。内置各种实用功能">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <link rel="icon" href="images/icon/duokai.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/weui.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/index.css">
+    <script src="js/weui.js"></script>
+    <style>
+        
+		@media (min-width: 830px) {
+			.yourlike{
+			    display: flex;
+			    align-content: center;
+			    /* justify-content: space-around; */
+			    justify-content: center;
+			}
+            .weixin{
+                display: none;
+            }
+		}
+		@media (max-width: 829px){
+			.yourlike{
+			   
+			}
+			.yourlike li {
+			    width: 48%;
+			    background-color: #fff;
+			    padding-bottom: 16px;
+			    margin-bottom: 10px;
+			    border: 2px solid #fff;
+			    transition: all .2s linear;
+			    -webkit-transition: all .2s linear;
+			    -ms-transition: all .2s linear;
+			    -moz-transition: all .2s linear;
+			    -o-transition: all .2s linear;
+			    border: 5px solid #fc0120;
+			}
+            .yourlike li:nth-child(1){
+                width: 85%;
+                margin-left: 30px;
+            }
+            .yourlike li:nth-child(2){
+                margin-left: 5px;
+            }
+            .yourlike li:nth-child(3){
+                margin-right: 0;
+            }
+            .yourlike li:nth-child(1) img{
+                width: 100%;
+            }
+			.yourlike li .picbox {
+			    display: block;
+			    padding: 20px;
+			    width: 235px;
+			    height: auto;
+			    overflow: hidden;
+				margin: 0 auto;
+			}
+           
+            .yourlike li img{
+                width: 70%;
+            }
+            .iphoneGap{
+                margin: 0;
+            }
+            .iphoneGap img{
+
+            }
+            .weixin{
+                color: white;
+                font-size: 22px;
+                text-align: center;
+                margin: 10px 0;
+            }
+            /*.hideLi{
+                display: none;
+            }
+            .qqHide{
+                display: none;
+            }*/
+		}
+        .shop_Btn{
+            width: 100px;
+            height: 30px;
+            background-color: darkgray;
+            border: 1px solid transparent;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            text-decoration: none; /* 去除默认的下划线 */
+            outline: none;	/* 去除旧版浏览器的点击后的外虚线框 */
+            color: #000;	/* 去除默认的颜色和点击后变化的颜色 */
+            cursor:pointer; /*小手*/
+        }
+        .shop_Btn:hover{
+            background-color: #ccc;
+        }
+
+
+        /* 导航 */
+		#leftsead {
+			width: 131px;
+			height: 143px;
+			position: fixed;
+			top: 70%;
+			right: 0px;
+		}
+
+		*html #leftsead {
+			margin-top: 258px;
+			position: absolute;
+			/* top: expression(eval(document.documentElement.scrollTop)); */
+		}
+
+		#leftsead li {
+			width: 131px;
+			height: 60px;
+		}
+
+		#leftsead li img {
+			float: right;
+		}
+
+		#leftsead li a {
+			height: 49px;
+			float: right;
+			display: block;
+			min-width: 47px;
+			max-width: 131px;
+		}
+
+		#leftsead li a .shows {
+			display: block;
+		}
+
+		#leftsead li a .hides {
+			margin-right: -143px;
+			cursor: pointer;
+			cursor: hand;
+		}
+
+		#leftsead li a.youhui .hides {
+			display: none;
+			position: absolute;
+			right: 190px;
+			top: 2px;
+		}
+        .footer_right{
+            width: 120px;
+            height: 120px;
+            margin-left: 100px;
+        }
+        .footer_right_iphone{
+            width: 120px;
+            height: 120px;
+            margin-left: 90px;
+        }
+        .payPic{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body data-uid="0" data-request-app="Web" data-request-hash="6745ca34q1vlzg" style="margin: 0;;">
+
+    <!-- 右边导航 -->
+    <div id="leftsead">
+		<ul>
+		<li>
+				<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2957534262&amp;site=qq&amp;menu=yes"><img src="images/ll04.png" width="131" height="49" class="hides">
+				<img src="images/l04.png" width="47" height="49" class="shows">
+				</a>
+
+			<li>
+				<a id="top_btn" el=“nofollow”><img src="images/ll06.png" width="131" height="49" class="hides" alt="返回顶部" title="返回顶部">
+					<img src="images/l06.png" width="47" height="49" class="shows" alt="返回顶部" title="返回顶部">
+				</a>
+			</li>
+		</ul>
+    </div>
+
+    <div id="header">
+        <div class="main">
+           
+                <span id="header-logo" style="display: flex;justify-content: left;align-items: center;">
+                    <img style="height: 35px;margin-right: 10px;" src="images/header-logo.png" alt="微信多开" title="微信多开">
+                    <span>微信多开-分身版</span>
+                </span>
+    
+            <div>
+                <a id="header-developer"><span>扫一扫添加客服微信</span></a>
+                <img class="payPic" src="images/wechat.jpg" alt="">
+          </div>
+        </div>
+    </div>
+
+    <div id="main">
+
+        <div id="first_screen" style="height: 750px;display: none;">
+            <div id="canvas-box" style="height: 750px;">
+                <canvas id="canvas" width="1920" height="750"></canvas>
+            </div>
+            <div id="main-content" style="height: 750px;">
+                <div class="text-group">
+                    <div class="weui-flex logo-box">
+                        <div class="weui-flex__item"></div>
+                    </div>
+                    <div class="weui-flex">
+                        <div class="weui-flex__item">
+                            <p class="title">Iphone微信多开</p>
+                            <p class="sub-title mobile-display">Iphone多开</p>
+                            <p class="sub-title pc-display">Iphone多开<br>官方APP商城下载</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="weui_ex_page page-download">
+            <div class="pc72"></div>
+           
+            <!-- 苹果头部 -->
+            <div class="rightgood-body">
+				<div class="floor floor0" id="floor0">
+					<div class="floor-title">
+						<h3><a class="iphone_size" >苹果多开支持ios13--ios16</a></h3>
+					</div>
+				</div>
+            </div>
+
+			<div class="guesslike">
+
+				<ul class="yourlike indyourlike">
+					<li>
+						<a href="a.html" class="picbox" target="_blank" el=“nofollow”>
+							<img src="images/39f3d64e7c9048ccd69a438129bdcec7.jpg" alt="苹果【证书版】" title="苹果【证书版】">
+						</a>
+						<div class="elli"> <a href="a.html" target="_blank" el=“nofollow”>苹果【证书版】(原版+1个)系统ios13-15使用</a></div>
+						<div style="display: flex;justify-content: space-between;align-items: center;padding: 2px;margin-right: 5px;">
+                            <a  class="price" el=“nofollow”>
+                                ￥<span>68.00</span>
+                            </a>
+                            <span>已售2328件</span>
+                         
+                        </div>
+
+					</li>
+					<li>
+						<a href="b.html" class="picbox" target="_blank" el=“nofollow”>
+							<img src="images/577e3c48adcb246b6b9bf5e7fc8cf691.jpg" alt="苹果【免签版】" title="苹果【免签版】">
+						</a>
+					  <div class="elli">
+					    <a href="b.html" target="_blank" el=“nofollow”>苹果【免签版】(原版+2个)系统ios14-16使用</a></div>
+
+                        <div style="display: flex;justify-content: space-between;align-items: center;padding: 2px;margin-right: 5px;">
+                            <a  class="price" el=“nofollow”>
+                                ￥<span>128.00</span>
+                            </a>
+                            <span>已售4101件</span>
+                          
+                        </div>
+
+                    </li>
+                    <li>
+						<a href="c.html" class="picbox" target="_blank" el=“nofollow”>
+							<img src="images/71ef43927012e837ba9be589e6b569a8.jpg" alt="苹果【内部版】" title="苹果【内部版】">
+						</a>
+					  <div class="elli">
+            <a href="c.html" el=“nofollow” target="_blank">苹果【内部版】(原版+3个)<strong>定制udid</strong>（支持16）</a>常用推荐！！！</div>
+
+						<div style="display: flex;justify-content: space-between;align-items: center;padding: 2px;margin-right: 5px;">
+                            <a  el=“nofollow” class="price">
+                                ￥<span>198.00</span>
+                            </a>
+                            <span>已售5885件</span>
+                         
+                        </div>
+					</li>
+
+				</ul>
+          </div>
+
+
+            <!-- 安卓头部 -->
+
+            <div class="rightgood-body">
+				<div class="floor floor1" id="floor1">
+					<div class="floor-title">
+						<h3><a >加客服微信购买/售后（永不失联）</a></h3>
+					</div>
+				</div>
+			</div>
+			<!--猜你喜欢-->
+
+			<div class="guesslike">
+
+				<ul class="yourlike indyourlike">
+				  <li class="hideLi">
+                      <a  class="picbox" target="_blank">
+						  <img src="images/wechat.jpg" alt="客服微信" title="客服微信"
+								onerror="this.src='static/admin/images/head_default.html'">
+					  </a>
+				    <div class="elli">
+					    <a  target="_blank">【有问题<strong>扫一扫咨询客服微信</strong>解答】<br>
+				      </a></div>
+
+					  <div style="display: flex;justify-content: space-between;align-items: center;padding: 2px;margin-right: 4px;">
+                        <a el=“nofollow”  class="price">
+                      ￥诚信无价</a><span>总售12314件</span></div>
+					</li>
+
+				</ul>
+			</div>
+        </div>
+    </div>
+
+    <div style="display:none">
+        <!-- stat script 2 -->
+    </div>
+    <div id="footer" style="margin-top: 20px;z-index: 10;">
+        <div class="content iphoneGap">
+        
+            <div class="footer-left">
+                <div class="icon-group">
+                    <div class="footer-logo-box">
+                        <img src="images/header-logo.png" alt="微信log" title="微信log">
+                    </div>
+                    <div class="footer-text-box" style="margin-left: 20px;">
+                        <p class="title">     
+                          不封号——不掉签</p>
+                        <p class="sub-title">稳定第一，多年老字号。</p>
+                    </div>
+                </div>
+
+              <div class="footer-info">
+                <p>Copyright © 2013-2023 微信多开, All Rights Reserved.                </p>
+              </div>
+            </div>
+            <img class="footer_right" src="images/wechat.jpg" alt="客服二维码" title="客服二维码">
+      </div>
+    </div>
+
+    <script>
+        window.addEventListener("load", function () {
+
+
+            $(".payPic").hide()
+			$("#header-developer").mouseover(function(){
+				$(".payPic").show()
+			})
+			$("#header-developer").mouseout(function(){
+				$(".payPic").hide()
+			})
+
+            
+            console.log(document.body.clientWidth);
+            if(document.body.clientWidth > 830){
+                $(".footer_right").show()
+                $(".footer_right_iphone").hide()
+                console.log(1);
+            }else{
+                $(".footer_right").hide()
+                $(".footer_right_iphone").show()
+                console.log(2);
+            }
+
+            var timer = 0;
+            var innerWidth = 0;
+            var innerHeight = 0;
+            var contentHeight = document.getElementById('main-content').offsetHeight;
+
+            function initialize() {
+                innerWidth = window.innerWidth
+                    || document.documentElement.clientWidth || document.body.clientWidth;
+                innerHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+            }
+
+            function drawCanvas() {
+                var canvas = document.getElementById('canvas');
+                var ctx = canvas.getContext("2d");
+                if (innerWidth > 1000) {
+                    if (innerHeight < contentHeight) {
+                        innerHeight = contentHeight;
+                    }
+                    if (contentHeight < 750) {
+                        innerHeight = 750;
+                    }
+                    document.getElementById('main-content').style.height = innerHeight + 'px';
+                } else {
+                    if (innerHeight < document.getElementById('main-content').offsetHeight) {
+                        innerHeight = document.getElementById('main-content').offsetHeight;
+                    }
+                    document.getElementById('main-content').style.height = contentHeight + 'px';
+                }
+                canvas.width = innerWidth;
+                canvas.height = innerHeight;
+                document.getElementById('canvas-box').style.height = innerHeight + 'px';
+                document.getElementById('first_screen').style.height = innerHeight + 'px';
+
+                ctx.lineWidth = 0;
+                ctx.strokeStyle = '#00804c';
+                ctx.beginPath();
+                ctx.moveTo(0, 0.55 * innerHeight);
+                ctx.lineTo(0.3 * innerWidth, innerHeight);
+                ctx.lineTo(0, innerHeight);
+                ctx.lineTo(0, 0, 55 * innerHeight);
+                ctx.stroke();
+                ctx.fillStyle = "#00804c";
+                ctx.fill();
+                ctx.closePath();
+
+                ctx.beginPath();
+                ctx.moveTo(0, 0);
+                ctx.lineTo(0, 0.55 * innerHeight);
+                ctx.lineTo(0.3 * innerWidth, innerHeight);
+                ctx.lineTo(0.4 * innerWidth, innerHeight);
+                ctx.lineTo(0.6 * innerWidth, 0);
+                ctx.lineTo(0, 0);
+                ctx.stroke();
+                ctx.fillStyle = "#00a667";
+                ctx.fill();
+                ctx.closePath();
+
+                ctx.beginPath();
+                ctx.moveTo(0.6 * innerWidth, 0);
+                ctx.lineTo(0.75 * innerWidth, 0);
+                ctx.lineTo(innerWidth, 0.3 * innerHeight);
+                ctx.lineTo(innerWidth, innerHeight);
+                ctx.lineTo(0.4 * innerWidth, innerHeight);
+                ctx.lineTo(0.6 * innerWidth, 0);
+                ctx.stroke();
+                ctx.fillStyle = "#00975a";
+                ctx.fill();
+                ctx.closePath();
+
+                ctx.beginPath();
+                ctx.moveTo(0.75 * innerWidth, 0);
+                ctx.lineTo(innerWidth, 0);
+                ctx.lineTo(innerWidth, 0.3 * innerHeight);
+                ctx.lineTo(0.75 * innerWidth, 0);
+                ctx.stroke();
+                ctx.fillStyle = "#00804c";
+                ctx.fill();
+                ctx.closePath();
+            }
+
+            function initCanvas() {
+                clearTimeout(timer);
+                timer = setTimeout(function () {
+                    if (window.innerWidth != innerWidth) {
+                        document.getElementById('main-content').style.height = '';
+                        document.getElementById('canvas-box').style.height = '';
+                        document.getElementById('first_screen').style.height = '';
+                        var canvas = document.getElementById('canvas');
+                        canvas.width = 0;
+                        canvas.height = 0;
+                        timer = 0;
+                        innerWidth = 0;
+                        innerHeight = 0;
+                        contentHeight = document.getElementById('main-content').offsetHeight;
+                        initialize();
+                        drawCanvas();
+                    }
+                }, 200);
+            }
+
+            window.addEventListener("resize", initCanvas);
+            initCanvas();
+
+              // 右边导航
+            $(document).ready(function () {
+
+                $("#leftsead a").hover(function () {
+                    if ($(this).prop("className") == "youhui") {
+                        $(this).children("img.hides").show();
+                    } else {
+                        $(this).children("img.hides").show();
+                        $(this).children("img.shows").hide();
+                        $(this).children("img.hides").animate({
+                            marginRight: '0px'
+                        }, 'slow');
+                    }
+                }, function () {
+                    if ($(this).prop("className") == "youhui") {
+                        $(this).children("img.hides").hide('slow');
+                    } else {
+                        $(this).children("img.hides").animate({
+                            marginRight: '-143px'
+                        }, 'slow', function () {
+                            $(this).hide();
+                            $(this).next("img.shows").show();
+                        });
+                    }
+                });
+
+                $("#top_btn").click(function () {
+                    if (scroll == "off") return;
+                    $("html,body").animate({
+                        scrollTop: 0
+                    }, 600);
+                });
+
+            });
+
+            //侧栏浮动定位显示隐藏     右边导航
+            $(window).scroll(function () {
+                var topH = $(".header").height() + $(".banner").height();
+                var footH = $(document).height() - $(".footer").height() - 500;
+
+                if ($(this).scrollTop() > topH - 250 && $(this).scrollTop() <= footH) {
+                    $(".leftgood-bar").fadeIn(200);
+                } else {
+                    $(".leftgood-bar").fadeOut(200);
+                }
+            });
+            setLeftBar();
+
+            function setLeftBar() {
+                if ($(window).width() > 1800) {
+                    $(".leftgood-bar").css("left", '200px');
+                }
+                if ($(window).width() <= 1800) {
+                    $(".leftgood-bar").css("left", '120px');
+                }
+                if ($(window).width() < 1600) {
+                    $(".leftgood-bar").css("left", '0px');
+                }
+            }
+            $(window).resize(function () {
+                setLeftBar();
+            });
+            $(".leftgood-bar .lgb").each(function () {
+                $(this).click(function () {
+                    $("body ,html").animate({
+                        scrollTop: $($(this).find("a").attr("name")).offset().top
+                    }, 500);
+
+                });
+            });
+        });
+    </script>
+
+    <script src="js/h.js" type="text/javascript"></script>
+    <script>
+      
+    </script>
+
+</body>
+
+
+
+</html>

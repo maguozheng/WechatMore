@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon/duokai.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/weui.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/index.css">
+    
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+   <title>支付宝扫码支付</title>
+    <style>
+        body{
+            background: #f7f7f7;
+            height: 100%;
+            max-width: 640px;
+            min-width: 300px;
+            min-height: 100%;
+            margin: 0 auto;
+        }
+        .title{
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+        }
+        .main{
+            margin-top: 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+        .payTime{
+            color: red;
+            font-size: 16px;    
+        }
+        .payMoney{
+            font-size: 48px;
+            margin-top: 10px;
+        }
+        .payhint{
+            font-family: "微软雅黑";
+            font-size: 15px;
+            margin: 5px 0;
+            padding-bottom: 2px;
+            letter-spacing: 2px;
+        }
+        .timeBox{
+            background-color: #3ec742;
+            color: #fff;
+            line-height: 25px;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0 10px;
+            margin-right: 10px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        .sweepSweep{
+            padding: 10px 0;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            margin-top: 20px;
+        }
+        .bottomMessage{
+            padding: 10px;
+        }
+        .public{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <img src="images/zhifubao.png" alt="">
+    </div>
+    <div class="main">
+        <p class="payTime">请在规定时间内支付下面显示金额</p>
+        <div class="payMoney">￥68.00</div>
+        <div class="payImg">
+            <img style="width: 400px;height: 450px;" src="images/zfb.jpg" alt="">
+      </div>
+        <b class="payhint">付款后自动到账 未到账可联系我们</b>
+  <div>
+            <span class="timeBox">0</span>
+            <span class="timeBox minute">10</span>
+            <span class="timeBox second">00</span>
+        </div>
+        <div class="sweepSweep">
+            <img src="images/wecharHint.png" alt="">
+        </div>
+        <div class="bottomMessage">
+            <div class="public account">
+                <span>账户</span>
+                <span>20216699213931584635481</span></div>
+            <div class="public money">
+                <span>金额</span>
+                <span>￥68.00</span>
+            </div>
+            <div class="public number">
+                <span>云端单号</span>
+                <span>1772711914333</span>
+            </div>
+        </div>
+        <div style="position: relative;">
+            <img style="width: 310px;height: 310px;" src="images/wechat.jpg" alt="">
+            <div style="top: 140px;font-weight: 900;font-size: 24px;">需微信支付或无法支付/无跳转联系<br>
+                客服微信：collersky</div>
+        </div>
+    </div>
+
+    <script>
+ 
+            var timeM = document.getElementsByClassName("minute")
+            var timeS = document.getElementsByClassName("second")
+            console.log(timeS[0].innerHTML);
+            var t = setInterval(() => {
+                timeS[0].innerHTML--;
+                    if(timeM[0].innerHTML == 0 && timeS[0].innerHTML == 0){
+                        clearInterval(t)
+                    }
+                    if(timeS[0].innerHTML<0){
+                        timeM[0].innerHTML--;
+                        timeS[0].innerHTML = 59;
+                    }
+                
+            }, 1000);
+        
+   
+    </script>
+</body>
+
+
+</html>
